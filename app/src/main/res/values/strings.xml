@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Hucker</string>
     <string name="todo">TODO</string>
+    <string name="facebook_app_id">313402805732631</string>
 </resources>

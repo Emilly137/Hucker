@@ -10,9 +10,19 @@
         android:id="@+id/textView2"
         android:layout_width="102dp"
         android:layout_height="30dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginTop="231dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginTop="44dp"
         android:text="LOGIN SCREEN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="260dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
