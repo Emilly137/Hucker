@@ -31,8 +31,8 @@ public class LoginScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        imageView8 = findViewById(R.id.imageView8);
-        imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
+       // imageView8 = findViewById(R.id.imageView8);
+       // imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();

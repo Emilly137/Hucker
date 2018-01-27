@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="768dp"
+        android:layout_width="679dp"
         android:layout_height="387dp"
         android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,20 +25,23 @@
         android:layout_width="176dp"
         android:layout_height="25dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974"
+        app:layout_constraintVertical_bias="0.946"
         app:srcCompat="@drawable/googleactions" />
 
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="168dp"
-        android:layout_height="40dp"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -47,10 +50,9 @@
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.887" />
 
     <Button
         android:id="@+id/button3"
@@ -58,11 +60,15 @@
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="?android:attr/colorEdgeEffect"
         android:text="Login "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
 
     <TextView
         android:id="@+id/textView2"
@@ -102,12 +108,14 @@
     <Button
         android:id="@+id/login_FB_button"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="170dp"
-        android:layout_height="48dp"
+        android:layout_width="162dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="404dp"
         android:layout_marginTop="220dp"
         android:background="@android:color/holo_blue_dark"
         android:text="with FB"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
