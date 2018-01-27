@@ -10,35 +10,35 @@
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="679dp"
-        android:layout_height="430dp"
+        android:layout_height="387dp"
         android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dragoon"
-        tools:rotation="90" />
+        app:layout_constraintVertical_bias="0.805"
+        app:srcCompat="@drawable/dragoon" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="176dp"
         android:layout_height="25dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.674"
+        app:layout_constraintVertical_bias="0.974"
         app:srcCompat="@drawable/googleactions" />
 
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="179dp"
-        android:layout_height="46dp"
+        android:layout_width="168dp"
+        android:layout_height="40dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -47,23 +47,21 @@
         android:text="Sign Up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.422" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="168dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="228dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:backgroundTint="?android:attr/colorEdgeEffect"
         android:text="Login "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -72,13 +70,13 @@
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="4dp"
         android:text="HUCKER"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -96,18 +94,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.023"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
+        app:layout_constraintVertical_bias="0.453" />
 
     <Button
         android:id="@+id/login_FB_button"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="170dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="196dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginEnd="404dp"
+        android:layout_marginTop="220dp"
+        android:background="@android:color/holo_blue_dark"
         android:text="with FB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
