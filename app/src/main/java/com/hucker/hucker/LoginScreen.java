@@ -20,7 +20,7 @@ import com.facebook.login.LoginResult;
 import java.util.Arrays;
 
 public class LoginScreen extends AppCompatActivity {
-    ImageView imageView8;
+  //  ImageView imageView8;
     TextView textView;
     Button login_withFB_button;
     CallbackManager callbackManager;
@@ -31,13 +31,21 @@ public class LoginScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        imageView8 = findViewById(R.id.imageView8);
-        imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
-
+        //imageView8 = findViewById(R.id.imageView8);
+       //imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        hideStatusBar();
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();
         loginWithFB();
     }
+
+    private void hideStatusBar(){
+        View decorView = getWindow().getDecorView();
+        // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+    }
+
 
     private void initializeCotrols(){
         callbackManager = CallbackManager.Factory.create();
