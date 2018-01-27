@@ -1,10 +1,12 @@
 package com.hucker.hucker;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -14,11 +16,11 @@ import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
-import com.facebook.login.widget.LoginButton;
 
 import java.util.Arrays;
 
 public class LoginScreen extends AppCompatActivity {
+    ImageView imageView8;
     TextView textView;
     Button login_withFB_button;
     CallbackManager callbackManager;
@@ -28,6 +30,9 @@ public class LoginScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_login_screen);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        imageView8 = findViewById(R.id.imageView8);
+        imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();

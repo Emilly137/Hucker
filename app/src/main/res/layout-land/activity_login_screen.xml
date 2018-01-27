@@ -9,7 +9,7 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="679dp"
+        android:layout_width="768dp"
         android:layout_height="387dp"
         android:layout_marginTop="44dp"
         app:layout_constraintBottom_toBottomOf="parent"
