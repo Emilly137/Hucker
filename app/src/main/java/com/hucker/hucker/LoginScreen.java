@@ -39,6 +39,7 @@ public class LoginScreen extends AppCompatActivity {
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();
         loginWithFB();
+        //
     }
 
     private void hideStatusBar(){
