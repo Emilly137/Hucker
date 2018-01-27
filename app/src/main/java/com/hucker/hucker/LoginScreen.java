@@ -84,6 +84,7 @@ public class LoginScreen extends AppCompatActivity {
                 Toast.makeText(LoginScreen.this, exception.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
+        ///
     }
 
     @Override
