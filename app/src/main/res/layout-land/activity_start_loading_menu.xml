@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="683dp"
-        android:layout_height="621dp"
+        android:layout_height="565dp"
         app:srcCompat="@android:color/background_light"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-26dp"
@@ -21,12 +21,12 @@
         android:layout_width="309dp"
         android:layout_height="222dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="264dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.495"
         app:srcCompat="@drawable/logosmall"
         tools:ignore="MissingConstraints" />
 
@@ -74,10 +74,9 @@
         android:progress="@android:integer/config_shortAnimTime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textTop"

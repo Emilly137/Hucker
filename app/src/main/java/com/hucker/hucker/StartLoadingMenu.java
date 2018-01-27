@@ -47,7 +47,7 @@ public class StartLoadingMenu extends AppCompatActivity {
         Thread callNextScreen = new Thread(){
             public void run(){
                 try{
-                    sleep(3500);
+                    sleep(5000);
                 }catch (InterruptedException ie){
                     ie.printStackTrace();
                 } finally {
