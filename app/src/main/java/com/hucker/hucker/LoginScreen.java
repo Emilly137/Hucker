@@ -1,5 +1,6 @@
 package com.hucker.hucker;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -28,15 +29,23 @@ public class LoginScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        hideStatusBar();
+
         imageView8 = findViewById(R.id.imageView8);
         imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();
         loginWithFB();
+    }
+
+    private void hideStatusBar(){
+        View decorView = getWindow().getDecorView();
+        // Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
     }
 
     private void initializeCotrols(){
