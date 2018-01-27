@@ -29,7 +29,7 @@
         app:layout_constraintVertical_bias="0.496"
         app:srcCompat="@drawable/logosmall"
         tools:ignore="MissingConstraints" />
-
+    <!--llllllllllllol-->
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="183dp"
@@ -55,6 +55,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="ver.01.2018.SNB"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
