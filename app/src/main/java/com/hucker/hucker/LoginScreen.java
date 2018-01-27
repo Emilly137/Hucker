@@ -3,7 +3,10 @@ package com.hucker.hucker;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -13,26 +16,34 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
 
+import java.util.Arrays;
+
 public class LoginScreen extends AppCompatActivity {
     TextView textView;
-    LoginButton login_button;
+    Button login_withFB_button;
     CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login_screen);
 
-        FacebookSdk.sdkInitialize(getApplicationContext());
-        setContentView(R.layout.activity_login_screen);
+        FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();
-
         loginWithFB();
     }
 
     private void initializeCotrols(){
         callbackManager = CallbackManager.Factory.create();
-        login_button = findViewById(R.id.login_button);
+        login_withFB_button = findViewById(R.id.login_FB_button);
+        login_withFB_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LoginManager.getInstance().logInWithReadPermissions(LoginScreen.this, Arrays.asList("public_profile"));
+            }
+        });
+
         textView = findViewById(R.id.textView2);
     }
 
@@ -46,12 +57,12 @@ public class LoginScreen extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-                textView.setText("Login Cancelled\n");
+                Toast.makeText(LoginScreen.this, "Login Cancel", Toast.LENGTH_LONG).show();
             }
 
             @Override
-            public void onError(FacebookException error) {
-                textView.setText("Login error: " + error.getMessage());
+            public void onError(FacebookException exception) {
+                Toast.makeText(LoginScreen.this, exception.getMessage(), Toast.LENGTH_LONG).show();
             }
         });
     }
