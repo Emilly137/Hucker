@@ -19,10 +19,14 @@ import com.facebook.login.LoginResult;
 
 import java.util.Arrays;
 
+
+
+
 public class LoginScreen extends AppCompatActivity {
-  //  ImageView imageView8;
+
     TextView textView;
     Button login_withFB_button;
+
     CallbackManager callbackManager;
 
     @Override
@@ -31,9 +35,10 @@ public class LoginScreen extends AppCompatActivity {
 
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        //imageView8 = findViewById(R.id.imageView8);
-       //imageView8.setScaleType(ImageView.ScaleType.CENTER_CROP);
         hideStatusBar();
+
+        login_withFB_button = (Button) findViewById(R.id.login_FB_button);
+
         FacebookSdk.sdkInitialize(this.getApplicationContext());
         initializeCotrols();
         loginWithFB();
@@ -62,6 +67,7 @@ public class LoginScreen extends AppCompatActivity {
 
 
     private void loginWithFB(){
+
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
