@@ -4,30 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dragoon"
     android:orientation="horizontal"
     android:visibility="visible"
-    android:background="@drawable/dragoon"
     tools:context="com.hucker.hucker.LoginScreen">
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="176dp"
-        android:layout_height="25dp"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+
+
         android:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/sign_up_button"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/login_FB_button"
+        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.946"
-        app:srcCompat="@drawable/googleactions" />
+        app:layout_constraintVertical_bias="0.86"
+        tools:ignore="MissingConstraints" />
+
 
     <Button
-        android:id="@+id/sign_up_button"
+        android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="170dp"
         android:layout_height="42dp"
@@ -36,28 +40,41 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="240dp"
         android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="8sp"
         android:text="Sign Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.887" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/login_button"
+        android:id="@+id/button3"
         android:layout_width="168dp"
         android:layout_height="43dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="8sp"
         android:text="Login "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.98"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.977" />
 
     <TextView
         android:id="@+id/textView2"
@@ -65,13 +82,16 @@
         android:layout_height="53dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="30sp"
         android:text="HUCKER"
-        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.WindowTitle"
+        android:textColor="@color/cardview_dark_background"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,18 +115,29 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <Button
+
         android:id="@+id/login_FB_button"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="162dp"
-        android:layout_height="22dp"
+        android:layout_width="170dp"
+        android:layout_height="42dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="404dp"
-        android:layout_marginTop="220dp"
-        android:background="@android:color/holo_blue_dark"
-        android:text="with FB"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="@color/colorPrimary"
+
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="8sp"
+        android:text="With Facebook"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
