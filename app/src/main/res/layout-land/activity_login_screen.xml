@@ -5,20 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:visibility="visible"
+    android:background="@drawable/dragoon"
     tools:context="com.hucker.hucker.LoginScreen">
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.805"
-        app:srcCompat="@drawable/dragoon" />
 
     <ImageButton
         android:id="@+id/imageButton"
