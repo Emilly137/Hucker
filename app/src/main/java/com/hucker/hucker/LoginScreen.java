@@ -1,3 +1,4 @@
+
 package com.hucker.hucker;
 
 import android.content.Intent;
@@ -6,7 +7,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,14 +19,12 @@ import com.facebook.login.LoginResult;
 
 import java.util.Arrays;
 
-
-
-
 public class LoginScreen extends AppCompatActivity {
 
     TextView textView;
     Button login_withFB_button;
-
+    Button loginButton;
+    Button sign_upButton;
     CallbackManager callbackManager;
 
     @Override
@@ -55,6 +53,9 @@ public class LoginScreen extends AppCompatActivity {
     private void initializeCotrols(){
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
+        loginButton = findViewById(R.id.login_button);
+        sign_upButton = findViewById(R.id.sign_up_button);
+
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -62,7 +63,19 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
 
-        textView = findViewById(R.id.textView2);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        sign_upButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
 
@@ -71,7 +84,7 @@ public class LoginScreen extends AppCompatActivity {
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                textView.setText("Login Success\n" + loginResult.getAccessToken());
+               
             }
 
             @Override
@@ -91,5 +104,22 @@ public class LoginScreen extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    private void callLoginScreen(){
+        final Intent intent = new Intent(this, StartLoadingMenu.class);
+        Thread callLoginScreen = new Thread(){
+            public void run(){
+                try{
+                    sleep(5000);
+                }catch (InterruptedException ie){
+                    ie.printStackTrace();
+                } finally {
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        };
+        callLoginScreen.start();
     }
 }

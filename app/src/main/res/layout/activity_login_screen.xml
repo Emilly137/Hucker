@@ -38,7 +38,7 @@
         app:srcCompat="@drawable/googleactions" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/sign_up_button"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="179dp"
         android:layout_height="46dp"
@@ -120,7 +120,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="176dp"
         android:text="with FB"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
