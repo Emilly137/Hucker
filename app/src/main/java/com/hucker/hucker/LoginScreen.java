@@ -1,10 +1,13 @@
 
 package com.hucker.hucker;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -20,8 +23,7 @@ import com.facebook.login.LoginResult;
 import java.util.Arrays;
 
 public class LoginScreen extends AppCompatActivity {
-
-    TextView textView;
+    ConstraintLayout LoginScreen;
     Button login_withFB_button;
     Button loginButton;
     Button sign_upButton;
@@ -49,12 +51,12 @@ public class LoginScreen extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-
     private void initializeCotrols(){
+        LoginScreen = findViewById(R.id.LoginScreen);
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
         loginButton = findViewById(R.id.login_button);
-        sign_upButton = findViewById(R.id.sign_up_button);
+        sign_upButton = findViewById(R.id.sign_up_Button);
 
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +78,18 @@ public class LoginScreen extends AppCompatActivity {
 
             }
         });
+
+        LoginScreen.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                switch (motionEvent.getAction()) {
+                    case MotionEvent.ACTION_DOWN:
+                        hideStatusBar();
+                        break;
+                }
+                return true;
+            }
+        });
     }
 
 
@@ -84,7 +98,7 @@ public class LoginScreen extends AppCompatActivity {
         LoginManager.getInstance().registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-               
+
             }
 
             @Override
@@ -122,4 +136,5 @@ public class LoginScreen extends AppCompatActivity {
         };
         callLoginScreen.start();
     }
+
 }
