@@ -9,13 +9,14 @@
         android:roundIcon="@mipmap/loogo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartLoadingMenu">
+        <activity android:name=".StartScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StartMenu"></activity>
         <activity android:name=".LoginScreen"></activity>
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id"/>

@@ -1,6 +1,5 @@
 package com.hucker.hucker;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -12,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class StartLoadingMenu extends AppCompatActivity {
+public class StartScreen extends AppCompatActivity {
     private TextView textEmail;
     private TextView textVersion;
     private TextView textTop;
@@ -24,7 +23,7 @@ public class StartLoadingMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_loading_menu);
+        setContentView(R.layout.activity_start);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         hideStatusBar();
@@ -60,7 +59,7 @@ public class StartLoadingMenu extends AppCompatActivity {
     }
 
     private void callNextScreen(){
-        final Intent intent = new Intent(this, LoginScreen.class);
+        final Intent intent = new Intent(this, StartMenu.class);
         Thread callNextScreen = new Thread(){
             public void run(){
                 try{

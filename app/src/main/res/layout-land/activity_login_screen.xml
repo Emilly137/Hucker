@@ -8,7 +8,7 @@
     android:background="@drawable/dragoon"
     android:orientation="horizontal"
     android:visibility="visible"
-    tools:context="com.hucker.hucker.LoginScreen">
+    tools:context="com.hucker.hucker.StartMenu">
 
     <Button
         android:id="@+id/imageButton"

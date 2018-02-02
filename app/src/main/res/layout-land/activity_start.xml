@@ -5,31 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.hucker.hucker.StartLoadingMenu">
+    tools:context="com.hucker.hucker.StartScreen">
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="683dp"
-        android:layout_height="621dp"
+        android:layout_width="682dp"
+        android:layout_height="565dp"
         app:srcCompat="@android:color/background_light"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteX="-24dp"
         tools:layout_editor_absoluteY="-21dp" />
 
     <ImageView
         android:id="@+id/imageLogo"
-        android:layout_width="309dp"
-        android:layout_height="222dp"
+        android:layout_width="249dp"
+        android:layout_height="180dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="160dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.496"
         app:srcCompat="@drawable/logosmall"
         tools:ignore="MissingConstraints" />
-
+    <!--llllllllllllol-->
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="183dp"
@@ -55,6 +55,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="ver.01.2018.SNB"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -65,8 +66,8 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="61dp"
-        android:layout_height="65dp"
+        android:layout_width="34dp"
+        android:layout_height="43dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -74,51 +75,61 @@
         android:progress="@android:integer/config_shortAnimTime"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
+        app:layout_constraintVertical_bias="0.843" />
 
     <TextView
         android:id="@+id/textTop"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="268dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:text="SNOWBOARDING TEACHER "
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.063"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
 
     <TextView
         android:id="@+id/textMid"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="IN YOUR POCKET"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageLogo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTop" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.962" />
 
     <TextView
         android:id="@+id/textBot"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:text="WHEREVER  WHENEVER"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintHorizontal_bias="0.942"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMid" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
 
 </android.support.constraint.ConstraintLayout>
 
