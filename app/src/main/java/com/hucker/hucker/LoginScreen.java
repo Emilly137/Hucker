@@ -36,6 +36,7 @@ public class LoginScreen extends AppCompatActivity {
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         hideStatusBar();
+      
 
         login_withFB_button = (Button) findViewById(R.id.login_FB_button);
 
@@ -50,6 +51,9 @@ public class LoginScreen extends AppCompatActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
     }
+
+
+
 
     private void initializeCotrols(){
         LoginScreen = findViewById(R.id.LoginScreen);

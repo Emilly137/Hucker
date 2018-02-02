@@ -10,24 +10,29 @@
     android:visibility="visible"
     tools:context="com.hucker.hucker.LoginScreen">
 
-    <ImageButton
+    <Button
         android:id="@+id/imageButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="173dp"
         android:layout_height="42dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+
+
+        android:layout_marginStart="200dp"
         android:layout_marginTop="8dp"
-
-
         android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="12sp"
+        android:text="With Google"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/login_FB_button"
-        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.86"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
         tools:ignore="MissingConstraints" />
 
 
@@ -40,7 +45,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="240dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/colorAccent"
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
         android:text="Sign Up"
@@ -49,8 +54,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -62,20 +66,19 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="?android:attr/colorEdgeEffect"
+        android:backgroundTint="@color/colorAccent"
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
-        android:text="Login "
+        android:text="Login"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="0.808" />
 
     <TextView
         android:id="@+id/textView2"
@@ -98,15 +101,18 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="242dp"
+        android:layout_width="264dp"
         android:layout_height="87dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="8sp"
         android:text="EVEN DRAGON CAN SNOWBOARDING"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/cardview_light_background"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -119,13 +125,13 @@
 
         android:id="@+id/login_FB_button"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="170dp"
+        android:layout_width="197dp"
         android:layout_height="42dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="240dp"
-        android:backgroundTint="@color/colorPrimary"
+        android:backgroundTint="@color/com_facebook_blue"
 
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
@@ -136,6 +142,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
