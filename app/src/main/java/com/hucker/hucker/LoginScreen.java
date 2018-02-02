@@ -36,7 +36,7 @@ public class LoginScreen extends AppCompatActivity {
         setContentView(R.layout.activity_login_screen);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         hideStatusBar();
-      
+
 
         login_withFB_button = (Button) findViewById(R.id.login_FB_button);
 
