@@ -53,7 +53,7 @@ public class StartMenu extends AppCompatActivity {
 
 
 
-    private void initializeCotrols(){
+    private void initializeCotrols() {
         LoginScreen = findViewById(R.id.LoginScreen);
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
@@ -74,12 +74,15 @@ public class StartMenu extends AppCompatActivity {
             }
         });
 
+
         sign_upButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                callSignUpScreen();
 
             }
         });
+
 
         LoginScreen.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -92,6 +95,7 @@ public class StartMenu extends AppCompatActivity {
                 return true;
             }
         });
+
     }
 
 
@@ -131,6 +135,18 @@ public class StartMenu extends AppCompatActivity {
             }
         };
         callLoginScreen.start();
+    }
+
+    private void callSignUpScreen(){
+        final Intent intent = new Intent(this, SignUpScreen.class);
+        Thread callSignUpScreen = new Thread(){
+            public void run(){
+                startActivity(intent);
+                finish();
+            }
+        };
+        callSignUpScreen.start();
+
     }
 
 }
