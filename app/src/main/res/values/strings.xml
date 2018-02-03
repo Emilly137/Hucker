@@ -2,4 +2,7 @@
     <string name="app_name">Hucker</string>
     <string name="todo">TODO</string>
     <string name="facebook_app_id">313402805732631</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 </resources>
