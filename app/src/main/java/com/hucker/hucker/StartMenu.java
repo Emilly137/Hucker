@@ -79,7 +79,6 @@ public class StartMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 callSignUpScreen();
-
             }
         });
 
@@ -146,7 +145,6 @@ public class StartMenu extends AppCompatActivity {
             }
         };
         callSignUpScreen.start();
-
     }
 
 }
