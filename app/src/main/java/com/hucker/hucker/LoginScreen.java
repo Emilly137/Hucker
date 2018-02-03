@@ -49,7 +49,6 @@ public class LoginScreen extends AppCompatActivity {
                 if((name.getText().toString().equals("123")) && (password.getText().toString().equals("123"))){
                   //  name.setText("Logined");
                     callMainActivityScreen();
-
                 } else {
                     name.setText("Wrong name or pass");
                 }
@@ -65,7 +64,7 @@ public class LoginScreen extends AppCompatActivity {
     }
 
     private void callMainActivityScreen(){
-        final Intent intent = new Intent(this, SignUpScreen.class);
+        final Intent intent = new Intent(this, MainActivity.class);
         Thread callMainActivity = new Thread(){
             public void run(){
                 startActivity(intent);

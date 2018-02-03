@@ -50,9 +50,6 @@ public class StartMenu extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-
-
-
     private void initializeCotrols() {
         LoginScreen = findViewById(R.id.LoginScreen);
         callbackManager = CallbackManager.Factory.create();
