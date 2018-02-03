@@ -46,8 +46,10 @@ public class LoginScreen extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if((name.getText().toString().equals("Puty137")) && (password.getText().toString().equals("Max"))){
-                    name.setText("Logined");
+                if((name.getText().toString().equals("123")) && (password.getText().toString().equals("123"))){
+                  //  name.setText("Logined");
+                    callMainActivityScreen();
+
                 } else {
                     name.setText("Wrong name or pass");
                 }
@@ -61,6 +63,18 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
     }
+
+    private void callMainActivityScreen(){
+        final Intent intent = new Intent(this, SignUpScreen.class);
+        Thread callMainActivity = new Thread(){
+            public void run(){
+                startActivity(intent);
+                finish();
+            }
+        };
+        callMainActivity.start();
+    }
+
 
     private void callSignUpScreen(){
         final Intent intent = new Intent(this, SignUpScreen.class);
