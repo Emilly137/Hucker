@@ -5,19 +5,19 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_lessons"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Lessons" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_progress"
             android:icon="@android:drawable/ic_menu_myplaces"
             android:title="Progress" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_news"
             android:icon="?android:attr/actionModePasteDrawable"
             android:title="News" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_events"
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="Events" />
         <item
@@ -25,30 +25,17 @@
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="Products" />
         <item
-            android:id="@+id/nav_SessionNotes"
+            android:id="@+id/nav_sessionnotes"
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="Session Notes" />
         <item
             android:id="@+id/nav_discuss"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Questions/ Discuss" />
+            android:title="Questions/Discuss" />
         <item
-            android:id="@+id/nav_Places"
+            android:id="@+id/nav_places"
             android:icon="@android:drawable/ic_menu_mapmode"
             android:title="Places" />
-        <item
-            android:id="@+id/nav_weather"
-            android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Weather" />
-        <item
-            android:id="@+id/nav_settings"
-            android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Settings" />
-        <item
-            android:id="@+id/nav_feedback"
-            android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Questions/ Discuss" />
-
 
     </group>
 
@@ -59,9 +46,17 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Feedback" />
+            <item
+                android:id="@+id/nav_aboutus"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:title="About us" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:title="Settings" />
         </menu>
     </item>
 

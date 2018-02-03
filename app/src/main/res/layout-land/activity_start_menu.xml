@@ -5,7 +5,7 @@
     android:id="@+id/LoginScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dragoon"
+    android:background="@drawable/bestdragoon"
     android:orientation="horizontal"
     android:visibility="visible"
     tools:context="com.hucker.hucker.StartMenu">

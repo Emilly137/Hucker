@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:visibility="visible"
-    android:background="@drawable/dragoon"
+    android:background="@drawable/bestdragoon"
     >
 
 
@@ -24,10 +24,10 @@
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704"
+        app:layout_constraintVertical_bias="0.692"
         tools:text="@android:string/paste_as_plain_text" />
 
     <EditText
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="40dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
@@ -92,7 +92,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintHorizontal_bias="0.953"
 
         app:layout_constraintStart_toStartOf="parent"
 
@@ -100,4 +100,5 @@
         app:layout_constraintTop_toBottomOf="@+id/Password"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 </android.support.constraint.ConstraintLayout>

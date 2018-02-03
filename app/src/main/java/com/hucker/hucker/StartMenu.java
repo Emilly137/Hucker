@@ -1,6 +1,7 @@
 
 package com.hucker.hucker;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -19,6 +20,7 @@ import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class StartMenu extends AppCompatActivity {
     ConstraintLayout LoginScreen;
@@ -39,7 +41,7 @@ public class StartMenu extends AppCompatActivity {
         login_withFB_button = (Button) findViewById(R.id.login_FB_button);
 
         FacebookSdk.sdkInitialize(this.getApplicationContext());
-        initializeCotrols();
+        initializeControls();
         loginWithFB();
     }
 
@@ -50,7 +52,8 @@ public class StartMenu extends AppCompatActivity {
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-    private void initializeCotrols() {
+    @SuppressLint("ClickableViewAccessibility")
+    private void initializeControls() {
         LoginScreen = findViewById(R.id.LoginScreen);
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
@@ -60,7 +63,7 @@ public class StartMenu extends AppCompatActivity {
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LoginManager.getInstance().logInWithReadPermissions(StartMenu.this, Arrays.asList("public_profile"));
+                LoginManager.getInstance().logInWithReadPermissions(StartMenu.this, Collections.singletonList("public_profile"));
             }
         });
 
@@ -94,6 +97,7 @@ public class StartMenu extends AppCompatActivity {
 
     }
 
+///////////////////////////////////////////LOGIN FACEBOOK///////////////////////////////////////////////////////////////////////////////////////////
 
     private void loginWithFB(){
 
@@ -115,13 +119,15 @@ public class StartMenu extends AppCompatActivity {
         });
         ///
     }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         callbackManager.onActivityResult(requestCode, resultCode, data);
         super.onActivityResult(requestCode, resultCode, data);
     }
 
+
+///// /////////////////////////////////////////////////CALL OPERATION////////////////////////////////////////////////////////////////////////////////
     private void callLoginScreen(){
         final Intent intent = new Intent(this, LoginScreen.class);
         Thread callLoginScreen = new Thread(){
