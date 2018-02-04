@@ -1,12 +1,11 @@
 package com.hucker.hucker;
 
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
-import android.view.View;
-import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,13 +13,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import fragments.Fragment_AboutUs;
+import fragments.Fragment_Events;
+import fragments.Fragment_Feedback;
 import fragments.Fragment_Lessons;
+import fragments.Fragment_News;
+import fragments.Fragment_Places;
+import fragments.Fragment_Products;
+import fragments.Fragment_Progress;
+import fragments.Fragment_Question_Discuss;
+import fragments.Fragment_Session_Notes;
+import fragments.Fragment_Settings;
+import fragments.Fragment_Share;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-        Fragment_Lessons fragment_lessons;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +55,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
-        fragment_lessons = new Fragment_Lessons();
-
     }
 
     @Override
@@ -84,41 +89,55 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+
+    Fragment fragment = null;
+    Class fragmentClass = null;
+
     @SuppressWarnings("StatementWithEmptyBody")
-    @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-
         if (id == R.id.nav_lessons) {
-            fragmentTransaction.replace(R.id.container, fragment_lessons);
-
-            // Handle the camera action
+            fragmentClass = Fragment_Lessons.class;
         } else if (id == R.id.nav_progress) {
-
+            fragmentClass = Fragment_Progress.class;
         } else if (id == R.id.nav_news) {
-
+            fragmentClass = Fragment_News.class;
         } else if (id == R.id.nav_events) {
-
+            fragmentClass = Fragment_Events.class;
         } else if (id == R.id.nav_products) {
-
+            fragmentClass = Fragment_Products.class;
         } else if (id == R.id.nav_sessionnotes) {
-
+            fragmentClass = Fragment_Session_Notes.class;
         } else if (id == R.id.nav_discuss) {
-
+            fragmentClass = Fragment_Question_Discuss.class;
         } else if (id == R.id.nav_places) {
-
+            fragmentClass = Fragment_Places.class;
         } else if (id == R.id.nav_settings ) {
-
+            fragmentClass = Fragment_Settings.class;
         } else if (id == R.id.nav_share) {
-
+            fragmentClass = Fragment_Share.class;
         } else if (id == R.id.nav_feedback ) {
-
+            fragmentClass = Fragment_Feedback.class;
         } else if (id == R.id.nav_aboutus) {
-
+            fragmentClass = Fragment_AboutUs.class;
         }
+
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        // Вставляем фрагмент, заменяя текущий фрагмент
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+        // Выделяем выбранный пункт меню в шторке
+        item.setChecked(true);
+        // Выводим выбранный пункт в заголовке
+        setTitle(item.getTitle());
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

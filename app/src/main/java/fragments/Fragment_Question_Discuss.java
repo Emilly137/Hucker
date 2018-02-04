@@ -1,5 +1,6 @@
 package fragments;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,11 +9,22 @@ import android.view.ViewGroup;
 
 import com.hucker.hucker.R;
 
-public class Fragment_Lessons extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class Fragment_Question_Discuss extends Fragment {
+
+
+    public Fragment_Question_Discuss() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_lessons_, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_question_discuss, container, false);
     }
+
 }
