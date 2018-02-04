@@ -129,7 +129,7 @@ public class StartMenu extends AppCompatActivity {
 
 ///// /////////////////////////////////////////////////CALL OPERATION////////////////////////////////////////////////////////////////////////////////
     private void callLoginScreen(){
-        final Intent intent = new Intent(this, LoginScreen.class);
+        final Intent intent = new Intent(this, LoginActivity.class);
         Thread callLoginScreen = new Thread(){
             public void run(){
                 startActivity(intent);

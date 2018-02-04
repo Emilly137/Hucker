@@ -10,41 +10,12 @@
     android:visibility="visible"
     tools:context="com.hucker.hucker.StartMenu">
 
-    <Button
-        android:id="@+id/imageButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="173dp"
-        android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-
-
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:fontFamily="serif-monospace"
-        android:lineSpacingExtra="12sp"
-        android:text="With Google"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/login_FB_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_button"
-        tools:ignore="MissingConstraints" />
-
 
     <Button
         android:id="@+id/sign_up_Button"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="170dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="240dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
@@ -53,19 +24,13 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="235dp" />
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="168dp"
+        android:layout_width="170dp"
         android:layout_height="43dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:backgroundTint="@color/colorAccent"
         android:fontFamily="serif-monospace"
         android:lineSpacingExtra="8sp"
@@ -74,52 +39,8 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.808" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="145dp"
-        android:layout_height="53dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/aclonica"
-        android:lineSpacingExtra="30sp"
-        android:text="HUCKER"
-        android:textAppearance="@android:style/TextAppearance.WindowTitle"
-        android:textColor="@color/cardview_dark_background"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="264dp"
-        android:layout_height="87dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/aclonica"
-        android:lineSpacingExtra="8sp"
-        android:text="EVEN DRAGON CAN SNOWBOARDING"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.023"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.437" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="319dp" />
 
     <Button
 
@@ -127,10 +48,6 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="197dp"
         android:layout_height="42dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="240dp"
         android:backgroundTint="@color/com_facebook_blue"
 
         android:fontFamily="serif-monospace"
@@ -140,12 +57,110 @@
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.978"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="24sp"
+        android:text="H"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="173dp"
+        tools:rotation="-12" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="24sp"
+        android:text="U"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:rotation="-12" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="24sp"
+        android:text="C"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="152dp"
+        tools:rotation="-12" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="24sp"
+        android:text="K"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:rotation="-12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="24sp"
+        android:text="E"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="135dp"
+        tools:rotation="-12" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="54dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/aclonica"
+        android:lineSpacingExtra="30sp"
+        android:text="R"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="125dp"
+        tools:rotation="-12" />
 
 </android.support.constraint.ConstraintLayout>
