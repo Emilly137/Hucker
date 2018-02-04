@@ -7,56 +7,56 @@
         <item
             android:id="@+id/nav_lessons"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Lessons" />
+            android:title="@string/lessons_item" />
         <item
             android:id="@+id/nav_progress"
             android:icon="@android:drawable/ic_menu_myplaces"
-            android:title="Progress" />
+            android:title="@string/progress_item" />
         <item
             android:id="@+id/nav_news"
             android:icon="?android:attr/actionModePasteDrawable"
-            android:title="News" />
+            android:title="@string/news_item" />
         <item
             android:id="@+id/nav_events"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Events" />
+            android:title="@string/events_item" />
         <item
             android:id="@+id/nav_products"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Products" />
+            android:title="@string/products_item" />
         <item
             android:id="@+id/nav_sessionnotes"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Session Notes" />
+            android:title="@string/session_notes_item" />
         <item
             android:id="@+id/nav_discuss"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Questions/Discuss" />
+            android:title="@string/questions_discuss_item" />
         <item
             android:id="@+id/nav_places"
             android:icon="@android:drawable/ic_menu_mapmode"
-            android:title="Places" />
+            android:title="@string/places_item" />
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/communicate_item">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="@string/share_item" />
             <item
                 android:id="@+id/nav_feedback"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Feedback" />
+                android:title="@string/feedback_item" />
             <item
                 android:id="@+id/nav_aboutus"
                 android:icon="@android:drawable/ic_menu_mapmode"
-                android:title="About us" />
+                android:title="@string/about_us_item" />
             <item
                 android:id="@+id/nav_settings"
                 android:icon="@android:drawable/ic_menu_mapmode"
-                android:title="Settings" />
+                android:title="@string/settings_item" />
         </menu>
     </item>
 
