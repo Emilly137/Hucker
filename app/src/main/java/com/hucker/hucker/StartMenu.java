@@ -19,7 +19,6 @@ import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 
-import java.util.Arrays;
 import java.util.Collections;
 
 public class StartMenu extends AppCompatActivity {
@@ -58,7 +57,7 @@ public class StartMenu extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
         loginButton = findViewById(R.id.login_button);
-        sign_upButton = findViewById(R.id.sign_up_Button);
+        sign_upButton = findViewById(R.id.forgot_password_Button);
 
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override

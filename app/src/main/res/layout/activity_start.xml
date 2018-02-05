@@ -8,25 +8,27 @@
     tools:context="com.hucker.hucker.StartScreen">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="683dp"
-        android:layout_height="621dp"
-        app:srcCompat="@android:color/background_light"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="-21dp" />
+        android:id="@+id/imageView2"
+        android:layout_width="439dp"
+        android:layout_height="590dp"
+        app:srcCompat="@color/cardview_light_background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/imageLogo"
         android:layout_width="309dp"
         android:layout_height="222dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.612"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/logosmall"
         tools:ignore="MissingConstraints" />
 
@@ -41,10 +43,10 @@
         android:text="huckersupport@gmail.com"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageLogo"
-        app:layout_constraintVertical_bias="0.984" />
+        app:layout_constraintVertical_bias="0.85" />
 
     <TextView
         android:id="@+id/textVersion"
@@ -77,48 +79,7 @@
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.823" />
-
-    <TextView
-        android:id="@+id/textTop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="SNOWBOARDING TEACHER "
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textMid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="IN YOUR POCKET"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTop" />
-
-    <TextView
-        android:id="@+id/textBot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="WHEREVER  WHENEVER"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textMid" />
+        app:layout_constraintVertical_bias="0.749" />
 
 </android.support.constraint.ConstraintLayout>
 

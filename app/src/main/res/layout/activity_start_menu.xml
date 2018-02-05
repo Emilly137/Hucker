@@ -5,63 +5,58 @@
     android:id="@+id/LoginScreen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bestdragoon"
     android:orientation="vertical"
     android:visibility="visible"
     tools:context="com.hucker.hucker.StartMenu">
+    <!--android:background="@drawable/snopumphalfpipe"-->
 
 
     <Button
-        android:id="@+id/sign_up_Button"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="196dp"
+        android:id="@+id/forgot_password_Button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="180dp"
         android:layout_height="42dp"
-        android:backgroundTint="@color/colorAccent"
-        android:fontFamily="serif-monospace"
-        android:lineSpacingExtra="8sp"
-        android:text="Sign Up"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:text="Forgot password?"
+        android:textAppearance="@android:style/TextAppearance.Material"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="472dp" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <Button
+        android:id="@+id/sign_up_Button2"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="139dp"
+        android:layout_height="42dp"
+        android:text="Create account"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="359dp" />
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="196dp"
         android:layout_height="42dp"
         android:backgroundTint="@color/colorAccent"
-        android:fontFamily="serif-monospace"
-        android:lineSpacingExtra="8sp"
         android:text="Login"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="@color/cardview_light_background"
-        android:textSize="18sp"
-        android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="331dp" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="317dp" />
 
     <Button
 
         android:id="@+id/login_FB_button"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="196dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="138dp"
         android:layout_height="42dp"
 
-        android:backgroundTint="@color/com_facebook_blue"
-        android:fontFamily="serif-monospace"
-        android:lineSpacingExtra="8sp"
         android:text="With Facebook"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:textAppearance="@android:style/TextAppearance.Material"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="403dp" />
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="359dp" />
 
     <TextView
         android:id="@+id/textView6"
@@ -71,14 +66,14 @@
         android:lineSpacingExtra="24sp"
         android:text="H"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="314dp"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="92dp"
         tools:rotation="-12" />
 
     <TextView
@@ -89,14 +84,14 @@
         android:lineSpacingExtra="24sp"
         android:text="U"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="293dp"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="102dp"
         tools:rotation="-12" />
 
     <TextView
@@ -107,13 +102,13 @@
         android:lineSpacingExtra="24sp"
         android:text="C"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="255dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="64dp"
         tools:rotation="-12" />
 
     <TextView
@@ -124,13 +119,13 @@
         android:lineSpacingExtra="24sp"
         android:text="K"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="225dp"
+        tools:layout_editor_absoluteX="203dp"
+        tools:layout_editor_absoluteY="84dp"
         tools:rotation="-12" />
 
     <TextView
@@ -141,13 +136,13 @@
         android:lineSpacingExtra="24sp"
         android:text="E"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="243dp"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="74dp"
         tools:rotation="-12" />
 
     <TextView
@@ -158,13 +153,43 @@
         android:lineSpacingExtra="30sp"
         android:text="R"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="@color/cardview_light_background"
+        android:textColor="@color/colorAccent"
         android:textSize="30sp"
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="207dp"
+        tools:layout_editor_absoluteX="295dp"
+        tools:layout_editor_absoluteY="92dp"
         tools:rotation="-12" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nickname / E-mail"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword|textVisiblePassword"
+        android:text="Password"
+        android:textAppearance="@android:style/TextAppearance.Material"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="280dp" />
 
 </android.support.constraint.ConstraintLayout>
