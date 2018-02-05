@@ -14,9 +14,6 @@ import android.widget.TextView;
 public class StartScreen extends AppCompatActivity {
     private TextView textEmail;
     private TextView textVersion;
-   // private TextView textTop;
-    private TextView textMid;
-    private TextView textBot;
     private ImageView imageLogo;
     private ProgressBar progressBar;
 
@@ -24,7 +21,6 @@ public class StartScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
         hideStatusBar();
         startAnim();
@@ -34,9 +30,6 @@ public class StartScreen extends AppCompatActivity {
     private void startAnim(){
         textEmail = findViewById(R.id.textEmail);
         textVersion = findViewById(R.id.textVersion);
-     //   textTop = findViewById(R.id.textTop);
-       // textMid = findViewById(R.id.textMid);
-        //textBot = findViewById(R.id.textBot);
         imageLogo = findViewById(R.id.imageLogo);
         progressBar = findViewById(R.id.progressBar);
 
@@ -44,9 +37,6 @@ public class StartScreen extends AppCompatActivity {
 
         textEmail.startAnimation(animation);
         textVersion.startAnimation(animation);
-//        textTop.startAnimation(animation);
-//        textMid.startAnimation(animation);
-     //   textBot.startAnimation(animation);
         imageLogo.startAnimation(animation);
         progressBar.startAnimation(animation);
     }

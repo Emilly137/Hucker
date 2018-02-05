@@ -16,10 +16,8 @@ public class SignUpScreen extends AppCompatActivity {
             super.onCreate(savedInstanceState);
 
             setContentView(R.layout.activity_sign_up);
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
             hideStatusBar();
-
-
         }
 
         private void hideStatusBar(){

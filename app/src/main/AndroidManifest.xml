@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".StartMenu" />
-        <activity android:name=".LoginScreen" />
+        <!--<activity android:name=".LoginScreen" />-->
         <activity android:name=".SignUpScreen" />
         >
         <meta-data

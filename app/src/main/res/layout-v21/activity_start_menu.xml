@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="275dp" />
 
     <Button
-        android:id="@+id/sign_up_Button"
+        android:id="@+id/sign_up_Button2"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="139dp"
         android:layout_height="42dp"
@@ -31,7 +31,7 @@
         android:textAppearance="@android:style/TextAppearance.Material"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="213dp"
-        tools:layout_editor_absoluteY="374dp" />
+        tools:layout_editor_absoluteY="359dp" />
 
     <Button
         android:id="@+id/login_button"
@@ -42,8 +42,8 @@
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="@color/cardview_light_background"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="324dp" />
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="317dp" />
 
     <Button
 
@@ -52,15 +52,15 @@
         android:layout_width="138dp"
         android:layout_height="42dp"
 
-        android:text="Facebook login"
+        android:text="With Facebook"
         android:textAppearance="@android:style/TextAppearance.Material"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="374dp" />
+        tools:layout_editor_absoluteY="359dp" />
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="24dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:lineSpacingExtra="24sp"
@@ -72,7 +72,7 @@
         android:typeface="normal"
         android:visibility="visible"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteX="57dp"
         tools:layout_editor_absoluteY="92dp"
         tools:rotation="-12" />
 
@@ -163,7 +163,7 @@
         tools:rotation="-12" />
 
     <EditText
-        android:id="@+id/loginText"
+        android:id="@+id/editText"
         android:layout_width="319dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -174,7 +174,7 @@
         tools:layout_editor_absoluteY="176dp" />
 
     <EditText
-        android:id="@+id/passwordText"
+        android:id="@+id/editText9"
         android:layout_width="318dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -185,11 +185,11 @@
         tools:layout_editor_absoluteY="224dp" />
 
     <CheckBox
-        android:id="@+id/rememberMeBox"
+        android:id="@+id/checkBox"
         android:layout_width="126dp"
         android:layout_height="wrap_content"
         android:text="Remember me"
-        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="280dp" />
 
 </android.support.constraint.ConstraintLayout>

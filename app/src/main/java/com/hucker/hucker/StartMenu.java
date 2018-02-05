@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.facebook.CallbackManager;
@@ -26,6 +27,9 @@ public class StartMenu extends AppCompatActivity {
     Button login_withFB_button;
     Button loginButton;
     Button sign_upButton;
+    EditText login;
+    EditText password;
+
     CallbackManager callbackManager;
 
     @Override
@@ -33,13 +37,9 @@ public class StartMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_start_menu);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        hideStatusBar();
-
-
-        login_withFB_button = (Button) findViewById(R.id.login_FB_button);
-
         FacebookSdk.sdkInitialize(this.getApplicationContext());
+
+        hideStatusBar();
         initializeControls();
         loginWithFB();
     }
@@ -69,7 +69,7 @@ public class StartMenu extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                callLoginScreen();
+                callMainScreen();
             }
         });
 
@@ -127,8 +127,8 @@ public class StartMenu extends AppCompatActivity {
 
 
 ///// /////////////////////////////////////////////////CALL OPERATION////////////////////////////////////////////////////////////////////////////////
-    private void callLoginScreen(){
-        final Intent intent = new Intent(this, LoginActivity.class);
+    private void callMainScreen(){
+        final Intent intent = new Intent(this, MainActivity.class);
         Thread callLoginScreen = new Thread(){
             public void run(){
                 startActivity(intent);
