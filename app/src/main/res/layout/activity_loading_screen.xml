@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="439dp"
-        android:layout_height="590dp"
+        android:layout_height="673dp"
         app:srcCompat="@color/cardview_light_background"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />

@@ -23,7 +23,7 @@ import com.facebook.login.LoginResult;
 import java.util.Collections;
 
 public class StartMenu extends AppCompatActivity {
-    ConstraintLayout LoginScreen;
+    ConstraintLayout StartMenuScreen;
     Button login_withFB_button;
     Button loginButton;
     Button sign_upButton;
@@ -53,7 +53,7 @@ public class StartMenu extends AppCompatActivity {
 
     @SuppressLint("ClickableViewAccessibility")
     private void initializeControls() {
-        LoginScreen = findViewById(R.id.LoginScreen);
+        StartMenuScreen = findViewById(R.id.StartMenuScreen);
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
         loginButton = findViewById(R.id.login_button);
@@ -73,16 +73,16 @@ public class StartMenu extends AppCompatActivity {
             }
         });
 
+//
+//        sign_upButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //callSignUpScreen();
+//            }
+//        });
 
-        sign_upButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                callSignUpScreen();
-            }
-        });
 
-
-        LoginScreen.setOnTouchListener(new View.OnTouchListener() {
+        StartMenuScreen.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 switch (motionEvent.getAction()) {
@@ -129,24 +129,24 @@ public class StartMenu extends AppCompatActivity {
 ///// /////////////////////////////////////////////////CALL OPERATION////////////////////////////////////////////////////////////////////////////////
     private void callMainScreen(){
         final Intent intent = new Intent(this, MainActivity.class);
-        Thread callLoginScreen = new Thread(){
+        Thread callMainScreen = new Thread(){
             public void run(){
                 startActivity(intent);
                 finish();
             }
         };
-        callLoginScreen.start();
+        callMainScreen.start();
     }
 
-    private void callSignUpScreen(){
-        final Intent intent = new Intent(this, SignUpScreen.class);
-        Thread callSignUpScreen = new Thread(){
-            public void run(){
-                startActivity(intent);
-                finish();
-            }
-        };
-        callSignUpScreen.start();
-    }
+//    private void callSignUpScreen(){
+//        final Intent intent = new Intent(this, SignUpScreen.class);
+//        Thread callSignUpScreen = new Thread(){
+//            public void run(){
+//                startActivity(intent);
+//                finish();
+//            }
+//        };
+//        callSignUpScreen.start();
+//    }
 
 }
