@@ -197,7 +197,7 @@
         android:layout_width="143dp"
         android:layout_height="42dp"
         android:fontFamily="@font/great_vibes"
-        android:text="or sign&start"
+        android:text="or signstart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
