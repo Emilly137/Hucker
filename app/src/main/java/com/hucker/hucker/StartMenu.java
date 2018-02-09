@@ -57,7 +57,7 @@ public class StartMenu extends AppCompatActivity {
         callbackManager = CallbackManager.Factory.create();
         login_withFB_button = findViewById(R.id.login_FB_button);
         loginButton = findViewById(R.id.login_button);
-        sign_upButton = findViewById(R.id.forgot_password_Button);
+        sign_upButton = findViewById(R.id.sign_up_Button);
 
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,13 +73,12 @@ public class StartMenu extends AppCompatActivity {
             }
         });
 
-//
-//        sign_upButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                //callSignUpScreen();
-//            }
-//        });
+        sign_upButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                callSignUpScreen();
+            }
+        });
 
 
         StartMenuScreen.setOnTouchListener(new View.OnTouchListener() {
@@ -138,15 +137,15 @@ public class StartMenu extends AppCompatActivity {
         callMainScreen.start();
     }
 
-//    private void callSignUpScreen(){
-//        final Intent intent = new Intent(this, SignUpScreen.class);
-//        Thread callSignUpScreen = new Thread(){
-//            public void run(){
-//                startActivity(intent);
-//                finish();
-//            }
-//        };
-//        callSignUpScreen.start();
-//    }
+    private void callSignUpScreen(){
+        final Intent intent = new Intent(this, SignUpScreen.class);
+        Thread callSignUpScreen = new Thread(){
+            public void run(){
+                startActivity(intent);
+                finish();
+            }
+        };
+        callSignUpScreen.start();
+    }
 
 }
