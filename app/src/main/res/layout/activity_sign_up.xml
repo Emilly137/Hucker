@@ -13,14 +13,13 @@
         android:layout_height="46dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="220dp"
         android:backgroundTint="@color/com_facebook_button_login_background_color"
         android:text="With Facebook"
         android:textAppearance="@android:style/TextAppearance.Material"
         android:textColor="@color/cardview_light_background"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -31,7 +30,7 @@
         android:layout_height="46dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="488dp"
+        android:layout_marginTop="496dp"
         android:backgroundTint="@color/colorAccent"
         android:text="Sign Up and Start"
         android:textAppearance="@android:style/TextAppearance.Material"
@@ -49,7 +48,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/aclonica"
         android:lineSpacingExtra="24sp"
         android:text="H"
@@ -61,7 +60,7 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.57"
@@ -202,7 +201,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
-        tools:layout_editor_absoluteX="127dp" />
+        tools:layout_editor_absoluteX="135dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -210,7 +209,7 @@
         android:layout_height="87dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="144dp"
         android:fontFamily="@font/great_vibes"
         android:text="    Join us "
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -238,15 +237,16 @@
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="357dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText4"
