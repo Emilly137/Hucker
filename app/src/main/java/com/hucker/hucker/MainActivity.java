@@ -35,23 +35,21 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
+     //  FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//          @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+//            }
+//        });
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+              this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+         drawer.addDrawerListener(toggle);
+         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -99,29 +97,29 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_lessons) {
-            fragmentClass = Fragment_Lessons.class;
+           fragmentClass = Fragment_Lessons.class;
         } else if (id == R.id.nav_progress) {
-            fragmentClass = Fragment_Progress.class;
+          //  fragmentClass = Fragment_Progress.class;
         } else if (id == R.id.nav_news) {
-            fragmentClass = Fragment_News.class;
+          //  fragmentClass = Fragment_News.class;
         } else if (id == R.id.nav_events) {
-            fragmentClass = Fragment_Events.class;
+           // fragmentClass = Fragment_Events.class;
         } else if (id == R.id.nav_products) {
-            fragmentClass = Fragment_Products.class;
+           // fragmentClass = Fragment_Products.class;
         } else if (id == R.id.nav_sessionnotes) {
-            fragmentClass = Fragment_Session_Notes.class;
+           // fragmentClass = Fragment_Session_Notes.class;
         } else if (id == R.id.nav_discuss) {
-            fragmentClass = Fragment_Question_Discuss.class;
+           // fragmentClass = Fragment_Question_Discuss.class;
         } else if (id == R.id.nav_places) {
-            fragmentClass = Fragment_Places.class;
+            //fragmentClass = Fragment_Places.class;
         } else if (id == R.id.nav_settings ) {
-            fragmentClass = Fragment_Settings.class;
+           // fragmentClass = Fragment_Settings.class;
         } else if (id == R.id.nav_share) {
-            fragmentClass = Fragment_Share.class;
+           // fragmentClass = Fragment_Share.class;
         } else if (id == R.id.nav_feedback ) {
-            fragmentClass = Fragment_Feedback.class;
+           // fragmentClass = Fragment_Feedback.class;
         } else if (id == R.id.nav_aboutus) {
-            fragmentClass = Fragment_AboutUs.class;
+           // fragmentClass = Fragment_AboutUs.class;
         }
 
         try {
@@ -129,7 +127,6 @@ public class MainActivity extends AppCompatActivity
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         // Вставляем фрагмент, заменяя текущий фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
@@ -143,3 +140,4 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 }
+
