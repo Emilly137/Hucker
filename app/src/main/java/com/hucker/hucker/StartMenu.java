@@ -80,7 +80,6 @@ public class StartMenu extends AppCompatActivity {
             }
         });
 
-
         StartMenuScreen.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {

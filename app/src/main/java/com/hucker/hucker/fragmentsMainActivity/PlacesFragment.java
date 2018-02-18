@@ -1,4 +1,4 @@
-package fragments;
+package com.hucker.hucker.fragmentsMainActivity;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.hucker.hucker.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment_Places extends Fragment {
+public class PlacesFragment extends Fragment {
 
 
-    public Fragment_Places() {
+    public PlacesFragment() {
         // Required empty public constructor
     }
 

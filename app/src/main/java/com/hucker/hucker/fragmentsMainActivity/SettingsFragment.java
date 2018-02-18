@@ -1,4 +1,4 @@
-package fragments;
+package com.hucker.hucker.fragmentsMainActivity;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.hucker.hucker.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment_Question_Discuss extends Fragment {
+public class SettingsFragment extends Fragment {
 
 
-    public Fragment_Question_Discuss() {
+    public SettingsFragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class Fragment_Question_Discuss extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_question_discuss, container, false);
+        return inflater.inflate(R.layout.fragment_settings, container, false);
     }
 
 }
