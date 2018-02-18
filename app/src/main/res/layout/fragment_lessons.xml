@@ -6,8 +6,16 @@
     tools:context="com.hucker.hucker.fragmentsMainActivity.ProgressFragment">
     <!-- TODO: Update blank fragment layout -->
 
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/lessons_item" />
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp" />
+
+
 </RelativeLayout>

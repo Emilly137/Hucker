@@ -87,7 +87,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/H"
         android:layout_width="24dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -104,7 +104,7 @@
         android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/U"
         app:layout_constraintHorizontal_bias="0.756"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -113,7 +113,7 @@
         tools:rotation="-12" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/U"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -130,7 +130,7 @@
         android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
-        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintEnd_toStartOf="@+id/C"
         app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -139,7 +139,7 @@
         tools:rotation="-12" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/C"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -156,7 +156,7 @@
         android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
-        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintEnd_toStartOf="@+id/K"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -164,7 +164,7 @@
         tools:rotation="-12" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/K"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -180,7 +180,7 @@
         android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/E"
         app:layout_constraintHorizontal_bias="0.91"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -188,7 +188,7 @@
         tools:rotation="-12" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/E"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -205,7 +205,7 @@
         android:typeface="normal"
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
-        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/R"
         app:layout_constraintHorizontal_bias="0.926"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -213,7 +213,7 @@
         tools:rotation="-12" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/R"
         android:layout_width="28dp"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"

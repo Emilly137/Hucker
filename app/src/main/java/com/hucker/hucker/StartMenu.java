@@ -58,6 +58,8 @@ public class StartMenu extends AppCompatActivity {
         login_withFB_button = findViewById(R.id.login_FB_button);
         loginButton = findViewById(R.id.login_button);
         sign_upButton = findViewById(R.id.sign_up_Button);
+        login = findViewById(R.id.loginText);
+        password = findViewById(R.id.passwordText);
 
         login_withFB_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,6 +94,19 @@ public class StartMenu extends AppCompatActivity {
             }
         });
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                login.setText("");
+            }
+        });
+
+        password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                password.setText("");
+            }
+        });
     }
 
 ///////////////////////////////////////////LOGIN FACEBOOK///////////////////////////////////////////////////////////////////////////////////////////
