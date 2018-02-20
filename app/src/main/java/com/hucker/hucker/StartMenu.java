@@ -1,4 +1,3 @@
-
 package com.hucker.hucker;
 
 import android.annotation.SuppressLint;
