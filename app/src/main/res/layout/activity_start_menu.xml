@@ -105,10 +105,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toStartOf="@+id/U"
-        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintHorizontal_bias="0.845"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintVertical_bias="0.45"
         tools:ignore="MissingConstraints"
         tools:rotation="-12" />
 
@@ -131,10 +131,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toStartOf="@+id/C"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505"
+        app:layout_constraintVertical_bias="0.571"
         tools:ignore="MissingConstraints"
         tools:rotation="-12" />
 
@@ -181,10 +181,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toStartOf="@+id/E"
-        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintVertical_bias="0.571"
         tools:rotation="-12" />
 
     <TextView
@@ -231,10 +231,10 @@
         android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/loginText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603"
+        app:layout_constraintVertical_bias="0.604"
         tools:rotation="-12" />
 
     <EditText
