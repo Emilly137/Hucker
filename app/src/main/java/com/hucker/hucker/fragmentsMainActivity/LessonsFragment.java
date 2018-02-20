@@ -29,14 +29,30 @@ public class LessonsFragment extends Fragment {
 
     public class SavedTabsListAdapter extends BaseExpandableListAdapter {
 
-        private String[] groups = { "People Names", "Dog Names", "Cat Names", "Fish Names" };
+        private String[] groups = { "Beginners", "Intermediate riding" , "Buttering" , "Jumping" , "Jibbing" , "Half-piping"};
 
         private String[][] children = {
-                { "Arnold", "Barry", "Chuck", "David" },
-                { "Ace", "Bandit", "Cha-Cha", "Deuce" },
-                { "Fluffy", "Snuggles" },
-                { "Goldy", "Bubbles" }
+                { "Are you Regular or Goofy?", "Parts of Snowboard", "How to Strap in", "How to skate on a snowboard", "How to Traverse on a snowboard" , "First turns Helicopter" },
+                { "Pressure control through turns", "How to Eurocarve on a snowboard", "How to ride Switch", "Backcountry Safety" },
+                { "What is buttering", "Buttering like a Boss" },
+                { "How to make a tramplin ", "Backcountry jumping" },
+                {"coming soon"},
+                {"coming soon"}
         };
+
+        @Override
+        public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
+            TextView textView = new TextView(LessonsFragment.this.getActivity());
+            textView.setText(getGroup(i).toString());
+            return textView;
+        }
+
+        @Override
+        public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+            TextView textView = new TextView(LessonsFragment.this.getActivity());
+            textView.setText(getChild(i, i1).toString());
+            return textView;
+        }
 
         @Override
         public int getGroupCount() {
@@ -71,20 +87,6 @@ public class LessonsFragment extends Fragment {
         @Override
         public boolean hasStableIds() {
             return true;
-        }
-
-        @Override
-        public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-            TextView textView = new TextView(LessonsFragment.this.getActivity());
-            textView.setText(getGroup(i).toString());
-            return textView;
-        }
-
-        @Override
-        public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
-            TextView textView = new TextView(LessonsFragment.this.getActivity());
-            textView.setText(getChild(i, i1).toString());
-            return textView;
         }
 
         @Override
