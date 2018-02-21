@@ -1,5 +1,6 @@
 package com.hucker.hucker.fragmentsMainActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -17,14 +18,18 @@ public class LessonsFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_lessons, null);
         ExpandableListView elv = (ExpandableListView) view.findViewById(R.id.expListView);
-        elv.setAdapter(new SavedTabsListAdapter());
+        elv.setAdapter(new SavedTabsListAdapter(getActivity().getApplicationContext()));
         return view;
     }
 
-
     public class SavedTabsListAdapter extends BaseExpandableListAdapter {
+        private Context mContext = null;
 
         private String[] groups = { "Beginners", "Intermediate riding" , "Buttering" , "Jumping" , "Jibbing" , "Half-piping"};
+
+        public SavedTabsListAdapter (Context context){
+            mContext = context;
+        }
 
         private String[][] children = {
                 { "Are you Regular or Goofy?", "Parts of Snowboard", "How to Strap in", "How to skate on a snowboard", "How to Traverse on a snowboard" , "First turns Helicopter" },
@@ -35,20 +40,56 @@ public class LessonsFragment extends Fragment {
                 {"coming soon"}
         };
 
-        @Override
-        public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
-            TextView textView = new TextView(LessonsFragment.this.getActivity());
-            textView.setText(getGroup(i).toString());
-            return textView;
-        }
+//        @Override
+//        public View getGroupView(int i, boolean b, View view, ViewGroup viewGroup) {
+//            TextView textView = new TextView(LessonsFragment.this.getActivity());
+//            textView.setText(getGroup(i).toString());
+//            return textView;
+//        }
+
+//        @Override
+//        public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
+//            TextView textView = new TextView(LessonsFragment.this.getActivity());
+//            textView.setText(getChild(i, i1).toString());
+//            return textView;
+//        }
 
         @Override
-        public View getChildView(int i, int i1, boolean b, View view, ViewGroup viewGroup) {
-            TextView textView = new TextView(LessonsFragment.this.getActivity());
-            textView.setText(getChild(i, i1).toString());
-            return textView;
-        }
+        public View getGroupView(int groupPosition, boolean isExpanded, View convertView,
+                                 ViewGroup parent) {
 
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.group_view, null);
+            }
+
+            if (isExpanded){
+                //Изменяем что-нибудь, если текущая Group раскрыта
+            }
+            else{
+                //Изменяем что-нибудь, если текущая Group скрыта
+            }
+
+            TextView textGroup = (TextView) convertView.findViewById(R.id.textGroup);
+            textGroup.setText(getGroup(groupPosition).toString());
+
+            return convertView;
+
+        }
+        //
+        @Override
+        public View getChildView(int groupPosition, int childPosition, boolean isLastChild,
+                                 View convertView, ViewGroup parent) {
+            if (convertView == null) {
+                LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                convertView = inflater.inflate(R.layout.child_view, null);
+            }
+
+            TextView textChild = (TextView) convertView.findViewById(R.id.textChild);
+            textChild.setText(getChild(groupPosition, childPosition).toString());
+
+            return convertView;
+        }
 
         @Override
         public int getGroupCount() {
