@@ -37,10 +37,6 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".fragmentsMainActivity.YouTube"
-            android:label="@string/title_activity_you_tube"
-            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
