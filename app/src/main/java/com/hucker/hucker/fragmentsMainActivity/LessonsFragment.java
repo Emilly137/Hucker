@@ -83,7 +83,7 @@ public class LessonsFragment extends Fragment {
             return convertView;
 
         }
-
+        //
         @Override
         public View getChildView(int groupPosition, int childPosition, boolean isLastChild,
                                  View convertView, ViewGroup parent) {
