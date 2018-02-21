@@ -7,15 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.SimpleExpandableListAdapter;
 import android.widget.TextView;
 
-import com.hucker.hucker.MainActivity;
 import com.hucker.hucker.R;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 
 public class LessonsFragment extends Fragment {
     @Override
@@ -26,6 +20,7 @@ public class LessonsFragment extends Fragment {
         elv.setAdapter(new SavedTabsListAdapter());
         return view;
     }
+
 
     public class SavedTabsListAdapter extends BaseExpandableListAdapter {
 
@@ -53,6 +48,7 @@ public class LessonsFragment extends Fragment {
             textView.setText(getChild(i, i1).toString());
             return textView;
         }
+
 
         @Override
         public int getGroupCount() {
