@@ -5,9 +5,14 @@
     tools:context="com.hucker.hucker.fragmentsMainActivity.ProductsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ExpandableListView
+        android:id="@+id/expListProductView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/products_item" />
+        android:layout_height="wrap_content"
+        android:indicatorLeft="250dp"
+        android:indicatorRight="300dp"
+        android:layout_marginTop="25dp"></ExpandableListView>
 
 </FrameLayout>
