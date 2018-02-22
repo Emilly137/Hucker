@@ -1,13 +1,50 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.hucker.hucker.fragmentsMainActivity.EventsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/events_item" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="342dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="SNOWBOARD EVENTS CALENDAR "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="370dp"
+        android:layout_height="358dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Following snowboarding’s competitive circuit has rarely been easy, mainly thanks to the presence of two rival tours – neither of which has the best of track records.  On the one hand you have the Fédération Internationale du Ski (FIS), which went from barely acknowledging snowboarding’s existence to presiding over its Olympic qualification process in a disturbingly short period of time. These days they run several successful snowboarding events, including their World Cup series, but the tour still struggles to shake off the baggage of history (not helped by the fact that the FIS World Championships is a mess). No matter, though; given that it’s an Olympic year, you can expect to see all the biggest names on the FIS tour.  Then there’s the World Snowboard Tour (WST). While on paper it’s always been ‘for snowboarders, by snowboarders’, that’s never quite been enough to consistently attract the best riders – especially when the five rings rolls around. They’re still involved in a few of the bigger events though, including the Burton US Open, and they run their own World Championships every four years as an alternative to the Olympics."
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="430dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="300dp"
+        android:src="@drawable/woman"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</android.support.constraint.ConstraintLayout>
